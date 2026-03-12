@@ -2,13 +2,13 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        maroon: '#800000',      // Sri Lankan Bus Red
-        pastelBlue: '#E3F2FD',  // Official Light Blue
+        maroon: "#800000",
+        pastelBlue: "#E3F2FD",
       },
     },
   },

@@ -1,14 +1,30 @@
+/* src/styles/index.css */
+
+/* Tailwind Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Base Layer: global full-width styles */
 @layer base {
-  body {
-    @apply m-0 p-0 bg-[#f8fafc] font-sans antialiased;
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;           /* full vertical height */
+    background-color: #f8fafc;   /* RideSync background */
+    font-family: sans-serif;     /* Tailwind default font */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Optional: full-width container utility for main sections */
+  main, header, footer, section {
+    width: 100%;
   }
 }
 
-/* Custom classes for your RideSync Branding */
+/* Custom RideSync Branding Colors */
 .text-maroon {
   color: #800000;
 }
@@ -19,4 +35,11 @@
 
 .bg-pastel-blue {
   background-color: #E3F2FD;
+}
+
+/* Optional: remove max-width from Tailwind containers if using */
+.container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
