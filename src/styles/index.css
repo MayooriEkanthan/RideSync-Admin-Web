@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 p-0 bg-[#f8fafc] font-sans antialiased;
+  }
+}
+
+/* Custom classes for your RideSync Branding */
+.text-maroon {
+  color: #800000;
+}
+
+.bg-maroon {
+  background-color: #800000;
+}
+
+.bg-pastel-blue {
+  background-color: #E3F2FD;
+}

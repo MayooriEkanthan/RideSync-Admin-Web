@@ -1,0 +1,54 @@
+/* Container for the main content to sit next to sidebar */
+.content-wrapper {
+  margin-left: 260px; /* Must match sidebar width */
+  padding: 40px;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+/* Big Welcome Card */
+.welcome-banner {
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #1e293b;
+  letter-spacing: -1.5px;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.stat-card {
+  background: white;
+  padding: 24px;
+  border-radius: 20px;
+  border-left: 5px solid #800000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1e293b;
+  margin-top: 8px;
+}

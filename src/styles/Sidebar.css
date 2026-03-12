@@ -1,0 +1,104 @@
+/* Sidebar Container */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.02);
+}
+
+/* Logo Section */
+.sidebar-header {
+  padding: 2.5rem 1.5rem;
+  border-bottom: 1px solid #f8fafc;
+}
+
+.logo-text {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #800000; /* Your Maroon Red */
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.admin-tag {
+  font-size: 10px;
+  font-weight: 800;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+/* Navigation List */
+.nav-list {
+  flex: 1;
+  padding: 1.5rem 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+/* Individual Nav Item */
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 0.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #64748b; /* Slate Gray */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover State: Uses your Pastel Blue */
+.nav-item:hover {
+  background-color: #E3F2FD; 
+  color: #800000;
+  transform: translateX(5px);
+}
+
+/* Active State: Uses your Maroon Red */
+.nav-item.active {
+  background-color: #800000;
+  color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(128, 0, 0, 0.25);
+}
+
+/* Icon Spacing */
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+/* Footer Section (Logout) */
+.sidebar-footer {
+  padding: 1.5rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background: transparent;
+  color: #ef4444; /* Alert Red */
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #fef2f2;
+}
